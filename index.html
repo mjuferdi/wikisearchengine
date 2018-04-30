@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wikipedia search engine</title>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Bowlby+One" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-12 jumbotron text-center">
+          <h1 class="heading">Wikkiraat</h1>
+          <p><i>Live search results from wikipedia...</i></p>
+          <hr class="shortHr"/>
+          <div class="searchBox">
+            <input type="text" class="form-control" name="search" id="search"
+            placeholder="Type something interesting!">
+            <br>
+            <button class="btn btn-primary random">Article of the day</button>
+          </div>
+        </div>
+
+        <div class="col-sm-8 col-sm-offset-2 searchResult">
+          <div id="update"></div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="container-fluid embed-responsive embed-responsive-16by9">
+      <div class="row">
+        <iframe src="" frameborder="0" class="embed-responsive-item"
+        width="1080" height="760"></iframe>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+  </body>
+</html>
